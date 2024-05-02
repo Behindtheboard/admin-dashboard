@@ -221,7 +221,7 @@ div[id$="-section"], div[class$="cards"], .card-title {
     grid-area: 2 / 2;
     grid-template: 8vh 40vh 8vh 1fr / 70% 30%;
     gap: 20px;
-    overflow: scroll;
+    background-color: #E2E8F0;
 }
 
 /* Sidebar details */
@@ -348,6 +348,9 @@ div[id^=nav] > svg {
 }
 
 .project-cards {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #CCD1D9;
 }
 
 .project-inner-cards {
