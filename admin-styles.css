@@ -192,12 +192,12 @@ svg {
     height: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6, h7
-{
-margin: 0px;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
 }
 
-#container, #main-content, div[id$="header"], div[id$="-section"] {
+#container, #main-content, div[id$="header"], 
+div[id$="-section"], div[class$="cards"], .card-title {
     display: grid;
 }
 
@@ -329,6 +329,10 @@ div[id^=nav] > svg {
 
 /* Main Content */
 
+#main-content > div[id$="title"], .card-title > h3 {
+    align-self: end;
+}
+
 #your-projects {
     grid-area: 1 / 1;
 }
@@ -336,7 +340,34 @@ div[id^=nav] > svg {
 #your-projects-section {
     grid-row: 2 / span 3;
     grid-column: 1;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(300px
+    , 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-cards {
+}
+
+.project-inner-cards {
+    max-height: 200px;
+    grid-area: 20px 160px 20px / 1fr;
+    padding: 20px;
+}
+
+.project-inner-cards > p {
+    min-height: 100px;
+    margin: 0px;
+}
+
+.card-title {
+    min-height: 40px;
+}
+
+.project-inner-cards > div:last-child {
+    display: flex;
+    justify-content: end;
     gap: 20px;
 }
 
