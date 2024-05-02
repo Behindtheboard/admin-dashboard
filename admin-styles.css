@@ -184,12 +184,24 @@ display: none;
 /* #F0B429 - card highlight*/
 
 @font-face {
-    font-family: roboto-google-font;
+    font-family: Roboto;
     src: url(./Roboto/Roboto-Regular.ttf);
+    /* src: url(./Roboto/Roboto-Bold.ttf); */
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url(./Roboto/Roboto-Medium.ttf);
 }
 
 body {
-    font-family: roboto-google-font, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+    font-size: 16px;
 }
 
 svg {
@@ -301,6 +313,10 @@ div[id^=nav] > svg {
     justify-self: center;
 }
 
+#user-icons-section > h3 {
+    font-family: 'Roboto-bold';
+}
+
 #bot-header {
     grid-template: 1fr / 60% 1fr;
 }
@@ -315,6 +331,10 @@ div[id^=nav] > svg {
 
 #user-name > * {
     margin: 0px;
+}
+
+#user-name > h2 {
+    font-family: 'Roboto-bold';
 }
 
 #button-section {
