@@ -181,9 +181,32 @@ display: none;
 
 /* Custom */
 
-.container {
+#container, #main-content, #nav, div[id$="-header"], div[id$="-section"] {
     display: grid;
 }
 
+#container {
+    grid-template: 20vh 1fr / 23vw 1fr;
+}
+
+svg {
+    height: 1.5rem;
+}
+
+#sidebar {
+    grid-area: span 2 / 1
+}
+
+#header {
+    grid-area: 1 / 2;
+}
+
+#main-content {
+    grid-area: 2 / 2;
+}
+
+#dashboard-icon > svg {
+    height: 2rem;
+}
 
 
