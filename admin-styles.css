@@ -222,7 +222,9 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    display: flex;
     margin: 0px;
+    align-items: center;
 }
 
 #container, #main-content, div[id$="header"], 
