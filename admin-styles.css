@@ -232,7 +232,7 @@ button, div[id$="icon"] {
 }
 
 #container {
-    grid-template: 170px 1fr / 305px 1fr;
+    grid-template: 180px 1fr / 305px 1fr;
 }
 
 #sidebar {
@@ -243,7 +243,10 @@ button, div[id$="icon"] {
 
 #header {
     grid-area: 1 / 2;
-    grid-template: 85px 85px / 1fr;
+    grid-template: 75px 105px / 1fr;
+    padding-left: 40px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px #CCD1D9;
 }
 
 #main-content {
@@ -296,17 +299,22 @@ div[id^=nav] > svg {
 /* Header Section */
 
 #top-header {
-    grid-template: 1fr / 800px 1fr;
+    grid-template: 1fr / 600px 1fr;
 }
 
 #search-bar-section {
-    grid-template: 1fr / 60px 600px;
+    grid-template: 1fr / 24px 1fr;
     gap: 20px;
 }
 
 #user-icons-section {
-    grid-template: 1fr / 50px 50px 200px;
+    grid-template: 1fr / 50px 50px 1fr;
+    padding-left: 100px;
     gap: 30px;
+}
+
+#user-icons-section > svg {
+    justify-self: end;
 }
 
 #profile-icon {
@@ -321,6 +329,10 @@ div[id^=nav] > svg {
     align-self: center;
 }
 
+#user-icons-section > h3 {
+    font-family: 'Roboto-bold';
+}
+
 #search-bar-section > input {
     height: 2rem;
     border-radius: 1rem;
@@ -333,26 +345,13 @@ div[id^=nav] > svg {
     align-self: center;
 }
 
-#search-bar-section > svg {
-    justify-self: end;
-}
-
-#user-icons-section > svg {
-    justify-self: center;
-}
-
-#user-icons-section > h3 {
-    font-family: 'Roboto-bold';
-}
 
 #bot-header {
     grid-template: 1fr / 650px 1fr;
-    z-index: 1;
-    box-shadow: 5px 5px 5px #CCD1D9;
 }
 
 #user-info-section {
-    grid-template: 1fr / 170px 530px; 
+    grid-template: 1fr / 100px 500px; 
 }
 
 #main-profile-icon {
@@ -380,6 +379,7 @@ div[id^=nav] > svg {
 
 #button-section {
     grid-template: 1fr / 1fr 1fr 1fr;
+    max-width: 350px;
     gap: 20px;
 }
 
