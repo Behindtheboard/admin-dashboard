@@ -236,7 +236,7 @@ button, div[id$="icon"] {
 }
 
 #container {
-    grid-template: 180px 1fr / 305px 1fr;
+    grid-template: 180px 1fr / 295px 1fr;
 }
 
 #sidebar {
@@ -255,7 +255,7 @@ button, div[id$="icon"] {
 
 #main-content {
     grid-area: 2 / 2;
-    grid-template: 60px 310px 60px 1fr / 750px 1fr;
+    grid-template: 60px 310px 60px 1fr / 775px 1fr;
     gap: 18px;
     padding-left: 20px;
     background-color: #E2E8F0;
@@ -303,7 +303,7 @@ div[id^=nav] > svg {
 /* Header Section */
 
 #top-header {
-    grid-template: 1fr / 600px 1fr;
+    grid-template: 1fr / 650px 1fr;
 }
 
 #search-bar-section {
@@ -350,7 +350,7 @@ div[id^=nav] > svg {
 }
 
 #bot-header {
-    grid-template: 1fr / 650px 1fr;
+    grid-template: 1fr / 700px 1fr;
 }
 
 #user-info-section {
@@ -405,6 +405,12 @@ div[id^=nav] > svg {
     align-self: end;
 }
 
+.project-cards, #announcements-section, #trending-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #CCD1D9;
+}
+
 #your-projects {
     grid-area: 1 / 1;
 }
@@ -413,15 +419,9 @@ div[id^=nav] > svg {
     grid-row: 2 / span 3;
     grid-column: 1;
     grid-template-rows: repeat(2, 225px);
-    grid-template-columns: repeat(auto-fit, minmax(300px
+    grid-template-columns: repeat(auto-fit, minmax(360px
     , 1fr));
     gap: 25px;
-}
-
-.project-cards {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #CCD1D9;
 }
 
 .project-inner-cards {
@@ -451,7 +451,8 @@ div[id^=nav] > svg {
 
 #announcements-section {
     grid-area: 2 / 2;
-    align-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 #announcements-section div h4{
