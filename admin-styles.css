@@ -201,7 +201,7 @@ body {
     font-variation-settings:
       "wdth" 100,
       "GRAD" 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 svg {
@@ -345,18 +345,18 @@ div[id^=nav] > svg {
     align-self: center;
 }
 
-
 #bot-header {
     grid-template: 1fr / 650px 1fr;
 }
 
 #user-info-section {
     grid-template: 1fr / 100px 500px; 
+    align-items: center;
 }
 
 #main-profile-icon {
-    max-height: 90px;
-    max-width: 90px;
+    min-height: 90px;
+    min-width: 90px;
     align-items: center;
 }
 
@@ -369,8 +369,8 @@ div[id^=nav] > svg {
     align-self: center;
 }
 
-#user-name > * {
-    margin: 0px;
+#user-name > p {
+    margin-top: 0px;
 }
 
 #user-name > h2 {
