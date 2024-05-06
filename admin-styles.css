@@ -255,10 +255,12 @@ button, div[id$="icon"] {
 
 #main-content {
     grid-area: 2 / 2;
-    grid-template: 60px 310px 60px 1fr / 775px 1fr;
+    grid-template: 60px 330px 60px 1fr / 775px 1fr;
     gap: 18px;
-    padding-left: 20px;
     background-color: #E2E8F0;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 90px;
 }
 
 /* Sidebar details */
@@ -451,17 +453,33 @@ div[id^=nav] > svg {
 
 #announcements-section {
     grid-area: 2 / 2;
-    align-items: center;
     padding: 30px;
 }
 
-#announcements-section div h4{
+#announcements-section > div {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#announcements-section > div:first-child {
+    border-bottom: 1px solid #E2E8F0;
+    padding-top: 0px;
+}
+
+#announcements-section > div:nth-child(2) {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+#announcements-section div:last-child > p  {
     margin-bottom: 0px;
 }
 
 .announcement-details {
-    font-size: 1rem;
-    margin-top: 0px;
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 
 #trending {
