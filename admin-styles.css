@@ -432,8 +432,18 @@ div[id^=nav] > svg {
     gap: 25px;
 }
 
+#your-projects-section .project-cards {
+    max-height: 225px;
+    grid-template-columns: 10px 1fr;
+}
+
+#card-marker {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #FACC15;
+}
+
 .project-inner-cards {
-    max-height: 400px;
     grid-area: 20px 160px 20px / 1fr;
     padding: 20px;
 }
@@ -456,6 +466,10 @@ div[id^=nav] > svg {
     display: flex;
     justify-content: end;
     gap: 20px;
+}
+
+.project-inner-cards svg:last-child {
+    rotate: -90deg;
 }
 
 #announcements {
@@ -502,7 +516,7 @@ div[id^=nav] > svg {
     padding: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 55.5px);
-    gap: 20px;
+    gap: 8px;
 }
 
 #trending-section .profile-icon-cards {
