@@ -310,7 +310,7 @@ div[id^=nav] > svg {
 /* Header Section */
 
 #top-header {
-    grid-template: 1fr / 650px 1fr;
+    grid-template: 1fr / 670px 1fr;
 }
 
 #search-bar-section {
@@ -320,7 +320,7 @@ div[id^=nav] > svg {
 
 #user-icons-section {
     grid-template: 1fr / 50px 50px 1fr;
-    padding-left: 100px;
+    padding-left: 80px;
     gap: 30px;
 }
 
@@ -330,13 +330,12 @@ div[id^=nav] > svg {
 
 #profile-icon {
     align-items: center;
-    justify-content: center;
 }
 
 #user-icons-section .image-container {
     background-color: #FACC15;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     align-self: center;
 }
 
