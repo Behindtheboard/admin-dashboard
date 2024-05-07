@@ -254,7 +254,7 @@ button, div[id$="icon"], #trending-section div {
     grid-template: 75px 105px / 1fr;
     padding-left: 40px;
     z-index: 1;
-    box-shadow: 5px 5px 5px #CCD1D9;
+    box-shadow: 5px 3px 5px #CCD1D9;
 }
 
 #main-content {
@@ -416,7 +416,7 @@ div[id^=nav] > svg {
 .project-cards, #announcements-section, #trending-section {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #CCD1D9;
+    box-shadow: 2px 3px 5px #CCD1D9;
 }
 
 #your-projects {
